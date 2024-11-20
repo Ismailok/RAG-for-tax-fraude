@@ -1,0 +1,4 @@
+tqdm==4.66.4
+openai==1.54.4
+scikit-learn==1.5.2
+pandas==2.2.3
