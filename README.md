@@ -7,21 +7,20 @@ Ce projet est une démonstration d'un assistant virtuel utilisant le modèle **R
 ### Arborescence des fichiers
 
 - **`data/`** : Contient les ensembles de données nécessaires au projet.
-  - `cleaned_data.csv` : Version nettoyée des données sources.
+  - `cleaned_data.csv` : Données nettoyées des données.
   - `data.csv` : Données brutes issues des documents juridiques.
-  - `ground-truth-retrieval.csv` : Fichier contenant des exemples pour évaluer la précision du système.
+  - `ground-truth-retrieval.csv` : Fichier contenant des exemples pour évaluer la précision.
   - `rag-eval-gpt-4o-mini.csv` : Résultats d'évaluations générés pour le modèle.
-- **`src/`** : Contient les scripts pour l'ingestion des données, la recherche et l'évaluation.
+- **`src/`** : Contient les scripts pour l'ingestion des données et l'évaluation.
   - `db_prep.py` : Script pour préparer et structurer les bases de données.
-  - `ingest.py` : Utilisé pour ingérer les données dans un index de recherche.
+  - `ingest.py` : Script pour ingérer les données dans un index de recherche.
   - `minsearch.py` : Fournit les fonctionnalités pour récupérer les informations à partir des données.
-  - **`parsing/`** : Contient des scripts pour le prétraitement des fichiers sources.
   - `rag.ipynb` : Contient l'implémentation principale du modèle RAG.
   - `rag_evaluation_data_generation.ipynb` : Permet de générer des données d'évaluation pour mesurer les performances.
-- **`requirements.txt`** : Liste des dépendances nécessaires au projet.
+- **`requirements.txt`** : Liste des dépendances.
 - **`.envrc`** : Configuration des variables d'environnement pour le projet.
 - **`Pipfile` et `Pipfile.lock`** : Gestion des dépendances et de l'environnement Python.
-- **`README.md`** : Ce fichier expliquant le projet.
+- **`README.md`** : Le Readme.
 
 ---
 
@@ -41,7 +40,7 @@ Les données utilisées sont issues de documents juridiques disponibles publique
 - `metadata` : Informations additionnelles, telles que la source ou la date.
 
 ### Préparation des données :
-- Les données brutes ont été nettoyées pour supprimer le bruit, normaliser les formats et structurer le contenu dans un format tabulaire (`cleaned_data.csv`).
+- Les données brutes ont été nettoyées, normaliser les formats et structurer le contenu dans un format tabulaire (`cleaned_data.csv`).
 
 ---
 
@@ -49,7 +48,7 @@ Les données utilisées sont issues de documents juridiques disponibles publique
 
 ### Prérequis
 
-- Python 3.8+
+- Python 3.10+
 - Conda (ou un environnement virtuel équivalent)
 
 ### Étapes d'installation
@@ -109,7 +108,7 @@ Les principales bibliothèques nécessaires sont :
     ```
 Suivre les étapes du notebook rag.ipynb pour exécuter le modèle RAG et tester l'assistant virtuel.
 
-ou 
+ou lancer directement avec
 
     ```bash
     python src/rag.py
