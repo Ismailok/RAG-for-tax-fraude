@@ -91,17 +91,18 @@ Les principales bibliothèques nécessaires sont :
 
 ## Reproduction des Résultats
 
-## Reproduction des Résultats
 
 ### Etape 1 : Préparer les données
 1. Exécuter le script pour préparer la base de données :
    ```bash
    python src/db_prep.py
   ```
+
 2. **Indexer les données dans le moteur de recherche :**
    ```bash
    python src/ingest.py
   ```
+
 ### Etape 2 : Exécuter le modèle RAG
     ```bash
     jupyter notebook src/rag.ipynb
