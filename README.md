@@ -98,7 +98,7 @@ Les principales bibliothèques nécessaires sont :
    python src/db_prep.py
   ```
 
-2. **Indexer les données dans le moteur de recherche :**
+2. Indexer les données dans le moteur de recherche :
    ```bash
    python src/ingest.py
   ```
