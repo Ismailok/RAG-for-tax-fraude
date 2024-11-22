@@ -7,7 +7,7 @@ Ce projet est une démonstration d'un assistant virtuel utilisant le modèle **R
 ### Arborescence des fichiers
 
 - **`data/`** : Contient les ensembles de données nécessaires au projet.
-  - `cleaned_data.csv` : Données nettoyées des données.
+  - `cleaned_data.csv` : Données nettoyées.
   - `data.csv` : Données brutes issues des documents juridiques.
   - `ground-truth-retrieval.csv` : Fichier contenant des exemples pour évaluer la précision.
   - `rag-eval-gpt-4o-mini.csv` : Résultats d'évaluations générés pour le modèle.
